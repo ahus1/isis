@@ -5,3 +5,11 @@
 :experimental:
 :idprefix:
 :idseparator: -
+
+// define in the AsciiDoc plugin's settings the attribute `css-online-preview`
+// to show the preview using the latest stylesheets from the nightly preview.
+// Will only work when online. Will pull fonts and CSS on opening the preview.
+ifdef::css-online-preview[]
+:stylesdir: {asciidoctorconfigdir}/antora
+:stylesheet: preview-stylesheet.css
+endif::[]
